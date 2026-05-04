@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RentalOps · Booking Website Mockup 009</title>
+  <meta name="description" content="RentalOps Demo: moderne öffentliche Vermietungs- und Booking-Webseite mit anderer Designrichtung." />
+  <link rel="stylesheet" href="assets/css/rentalops.css" />
+</head>
+<body>
+  <div class="page-shell" id="top">
+    <header class="nav-bar">
+      <a class="brand" href="#top" aria-label="RentalOps Start">
+        <span class="brand-icon">R</span>
+        <span>
+          <strong>RentalOps</strong>
+          <small>Fleet Booking Experience</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation">
+        <a href="#fleet">Mietflotte</a>
+        <a href="#booking">Anfrage</a>
+        <a href="#flow">Ablauf</a>
+        <a href="#portal">Portal</a>
+        <a href="#engine">System dahinter</a>
+      </nav>
+      <a class="nav-action" href="#booking">Jetzt Zeitraum prüfen</a>
+    </header>
+
+    <main>
+      <section class="hero hero-v007">
+        <div class="hero-copy">
+          <p class="build-tag">RENTALOPS-MOCKUP-009 · Public Rental Website</p>
+          <h1>Eine Vermietungsseite, die nicht nach Dashboard aussieht.</h1>
+          <p class="lead">Fahrzeuge, Anhänger, E-Bikes oder Geräte werden wie ein modernes Produkt-Erlebnis präsentiert: entdecken, vergleichen, Zeitraum wählen und Anfrage abschicken.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#fleet">Mietobjekte ansehen</a>
+            <a class="btn secondary" href="#engine">Technik ansehen</a>
+          </div>
+          <div class="hero-proof">
+            <span><b>Live Anfrage</b> statt Mail-Chaos</span>
+            <span><b>Verfügbarkeit</b> direkt sichtbar</span>
+            <span><b>Statuslink</b> für Kunden</span>
+            <span><b>Preise</b> sauber erklärbar</span>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="RentalOps Fahrzeug-Showcase">
+          <div class="showcase-card hero-card main-offer">
+            <div class="offer-topline">
+              <span class="dot-live"></span>
+              <span>Featured Booking</span>
+            </div>
+            <div class="offer-visual sports">
+              <div class="speed-lines"></div>
+              <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle line-vehicle-hero">
+                <use href="#icon-sportscar"></use>
+              </svg>
+            </div>
+            <div class="offer-meta">
+              <span>Sportwagen · Premiumklasse</span>
+              <strong>ab 129 € / Tag</strong>
+            </div>
+          </div>
+
+          <div class="mini-ticket ticket-one">
+            <span>Heute verfügbar</span>
+            <strong>8 Mietobjekte</strong>
+          </div>
+          <div class="mini-ticket ticket-two">
+            <span>Anfragezeit</span>
+            <strong>&lt; 2 Minuten</strong>
+          </div>
+          <div class="booking-chip">
+            <span>Mi 08.05.</span>
+            <i></i>
+            <span>Fr 10.05.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-dock" aria-label="Schnellauswahl Mietkategorien">
+        <button class="dock-item active" data-filter="all">Alle</button>
+        <button class="dock-item" data-filter="pkw">PKW</button>
+        <button class="dock-item" data-filter="sport">Sportwagen</button>
+        <button class="dock-item" data-filter="transporter">Transporter</button>
+        <button class="dock-item" data-filter="bike">E-Bikes</button>
+        <button class="dock-item" data-filter="trailer">Anhänger</button>
+      </section>
+
+      <section class="section-head" id="fleet">
+        <p class="label">Mietflotte</p>
+        <h2>Mietobjekte als moderne Angebotswelt.</h2>
+        <p>Die Karten können später mit echten Fahrzeugfotos, generierten Assets oder Markenbildern ersetzt werden. Wichtig ist: Der Besucher sieht sofort Kategorie, Preis, Einsatzzweck und kann direkt den Zeitraum prüfen.</p>
+      </section>
+
+      <section class="fleet-experience">
+        <article class="rental-card selected" data-type="sport" data-title="Sportwagen · Premiumklasse" data-price="129" data-sub="Wochenende, Events & besondere Fahrten" data-specs="2 Sitze · Automatik · Premium">
+          <div class="visual-cover cover-sport">
+            <div class="cover-title"><span>Premium</span><b>Sportwagen</b></div>
+            <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle">
+              <use href="#icon-sportscar"></use>
+            </svg>
+          </div>
+          <div class="rental-content">
+            <span class="type-chip">Premium</span>
+            <h3>Sportwagen · Premiumklasse</h3>
+            <p>Für besondere Wochenenden, Events, Fotoshootings oder Kundenfahrten mit starkem Auftritt.</p>
+            <div class="rental-specs"><span>2 Sitze</span><span>Automatik</span><span>Premium</span></div>
+            <button>Auswählen</button>
+          </div>
+          <strong class="rate">129 € <small>/ Tag</small></strong>
+        </article>
+
+        <article class="rental-card" data-type="pkw" data-title="PKW · Mittelklasse" data-price="59" data-sub="Alltag, Termine & Ersatzfahrzeug" data-specs="5 Sitze · Komfort · sparsam">
+          <div class="visual-cover cover-pkw">
+            <div class="cover-title"><span>Komfort</span><b>PKW</b></div>
+            <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle">
+              <use href="#icon-car"></use>
+            </svg>
+          </div>
+          <div class="rental-content">
+            <span class="type-chip">Alltag</span>
+            <h3>PKW · Mittelklasse</h3>
+            <p>Praktisch für Termine, Wochenendausflüge oder als Ersatzfahrzeug bei Reparatur.</p>
+            <div class="rental-specs"><span>5 Sitze</span><span>Klima</span><span>sparsam</span></div>
+            <button>Auswählen</button>
+          </div>
+          <strong class="rate">59 € <small>/ Tag</small></strong>
+        </article>
+
+        <article class="rental-card" data-type="transporter" data-title="Transporter · 3,5 t" data-price="89" data-sub="Umzug, Lieferung & Gewerbe" data-specs="Laderaum · Rampe optional · 3,5 t">
+          <div class="visual-cover cover-van">
+            <div class="cover-title"><span>Transport</span><b>Van</b></div>
+            <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle">
+              <use href="#icon-van"></use>
+            </svg>
+          </div>
+          <div class="rental-content">
+            <span class="type-chip">Gewerbe</span>
+            <h3>Transporter · 3,5 t</h3>
+            <p>Für Umzüge, Materialfahrten, Lieferungen oder kurzfristige gewerbliche Einsätze.</p>
+            <div class="rental-specs"><span>3,5 t</span><span>Laderaum</span><span>optional Rampe</span></div>
+            <button>Auswählen</button>
+          </div>
+          <strong class="rate">89 € <small>/ Tag</small></strong>
+        </article>
+
+        <article class="rental-card" data-type="bike" data-title="E-Bike · Tourenrad" data-price="29" data-sub="Freizeit, Tourismus & Tagesausflug" data-specs="Akku · Helm optional · Tour">
+          <div class="visual-cover cover-bike">
+            <div class="cover-title"><span>Tour</span><b>E-Bike</b></div>
+            <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle bike-icon">
+              <use href="#icon-bike"></use>
+            </svg>
+          </div>
+          <div class="rental-content">
+            <span class="type-chip">Freizeit</span>
+            <h3>E-Bike · Tourenrad</h3>
+            <p>Ideal für Ausflüge, Hotelgäste, Stadtbesichtigung oder Wochenendtouren.</p>
+            <div class="rental-specs"><span>Akku</span><span>Tour</span><span>Helm optional</span></div>
+            <button>Auswählen</button>
+          </div>
+          <strong class="rate">29 € <small>/ Tag</small></strong>
+        </article>
+
+        <article class="rental-card" data-type="trailer" data-title="Kofferanhänger · 750 kg" data-price="29" data-sub="Transport, Umzug & sichere Ladung" data-specs="750 kg · abschließbar · Zurrösen">
+          <div class="visual-cover cover-trailer">
+            <div class="cover-title"><span>Transport</span><b>Anhänger</b></div>
+            <svg viewBox="0 0 720 330" aria-hidden="true" class="line-vehicle">
+              <use href="#icon-trailer"></use>
+            </svg>
+          </div>
+          <div class="rental-content">
+            <span class="type-chip">Anhänger</span>
+            <h3>Kofferanhänger · 750 kg</h3>
+            <p>Für sichere Transporte, kleine Umzüge oder Materialfahrten mit geschlossenem Aufbau.</p>
+            <div class="rental-specs"><span>750 kg</span><span>abschließbar</span><span>Zurrösen</span></div>
+            <button>Auswählen</button>
+          </div>
+          <strong class="rate">29 € <small>/ Tag</small></strong>
+        </article>
+      </section>
+
+      <section class="booking-lab" id="booking">
+        <div class="booking-copy">
+          <p class="label">Verfügbarkeit & Preis</p>
+          <h2>Der Kunde wird nicht ins Formular geworfen, sondern geführt.</h2>
+          <p>Statt „Schreib uns mal“ führt die Seite durch Fahrzeug, Zeitraum, Standort und Kontakt. Am Ende entsteht eine saubere Anfrage für das Team.</p>
+          <div class="process-cards">
+            <span>1 · Mietobjekt wählen</span>
+            <span>2 · Zeitraum prüfen</span>
+            <span>3 · Anfrage senden</span>
+          </div>
+        </div>
+
+        <aside class="booking-widget" aria-label="Buchungsbeispiel">
+          <div class="widget-head">
+            <span>Aktuelle Auswahl</span>
+            <strong id="selectedTitle">Sportwagen · Premiumklasse</strong>
+            <small id="selectedSub">Wochenende, Events & besondere Fahrten</small>
+          </div>
+          <div class="date-grid">
+            <label>Start
+              <input id="startDate" type="date" value="2026-05-08" />
+            </label>
+            <label>Ende
+              <input id="endDate" type="date" value="2026-05-10" />
+            </label>
+          </div>
+          <div class="summary-line"><span>Mietdauer</span><b id="daysCount">3 Tage</b></div>
+          <div class="summary-line"><span>Tagespreis</span><b id="dayRate">129 €</b></div>
+          <div class="summary-total"><span>Preisvorschau</span><strong id="totalPrice">387 €</strong></div>
+          <a class="widget-button" href="mailto:info@core-engineeringstudio.de">Anfrage vorbereiten</a>
+          <p class="widget-note">Demo-Kontakt: info@core-engineeringstudio.de</p>
+        </aside>
+      </section>
+
+      <section class="flow-section" id="flow">
+        <div class="section-head compact">
+          <p class="label">Customer Journey</p>
+          <h2>So fühlt sich die Kundenseite an.</h2>
+        </div>
+        <div class="journey-track">
+          <article><b>01</b><h3>Entdecken</h3><p>Kategorie wählen, Angebot sehen, Vorteile verstehen.</p></article>
+          <article><b>02</b><h3>Vergleichen</h3><p>Preis, Eckdaten, Zeitraum und Optionen direkt prüfen.</p></article>
+          <article><b>03</b><h3>Anfragen</h3><p>Kontakt und gewünschte Mietdaten sauber übermitteln.</p></article>
+          <article><b>04</b><h3>Status verfolgen</h3><p>Kunde bekommt Bestätigung und kann später den Stand prüfen.</p></article>
+        </div>
+      </section>
+
+      <section class="portal-section" id="portal">
+        <div class="portal-copy">
+          <p class="label">Portal & Belegung</p>
+          <h2>Vorne verkauft die Seite. Hinten verwaltet das Team die Flotte.</h2>
+          <p>Jedes Fahrzeug oder Mietobjekt kann im Mitarbeiterportal als eigener Datensatz geführt werden: Kennzeichen, Kategorie, Status, Kunde, Mietzeitraum, Rückgabe, Kaution und interne Notizen.</p>
+          <div class="portal-points">
+            <span>Kunde sieht sofort, wenn ein Wagen nicht verfügbar ist</span>
+            <span>Mietzeitraum kann intern bestätigt oder abgelehnt werden</span>
+            <span>Statusmails und Aufgaben laufen automatisch nach Regelwerk</span>
+          </div>
+        </div>
+
+        <div class="portal-preview" aria-label="Mitarbeiterportal Vorschau">
+          <div class="portal-toolbar">
+            <div>
+              <span class="mini-label">Mitarbeiterportal</span>
+              <strong>Flottenstatus · Mai 2026</strong>
+            </div>
+            <button>Zeitraum bestätigen</button>
+          </div>
+
+          <div class="fleet-status-list">
+            <div class="fleet-row busy">
+              <span class="plate">M-RO 2401</span>
+              <div><b>PKW · Mittelklasse</b><small>vermietet an Kunde #1042 · Rückgabe 10.05.</small></div>
+              <em>vermietet</em>
+            </div>
+            <div class="fleet-row free">
+              <span class="plate">M-RO 2402</span>
+              <div><b>Transporter · 3,5 t</b><small>frei ab sofort · Anfrage möglich</small></div>
+              <em>frei</em>
+            </div>
+            <div class="fleet-row request">
+              <span class="plate">M-RO 2403</span>
+              <div><b>Kofferanhänger · 750 kg</b><small>angefragt für 12.05. bis 14.05.</small></div>
+              <em>angefragt</em>
+            </div>
+          </div>
+
+          <div class="mini-calendar">
+            <div class="cal-head"><span>08.05.</span><span>09.05.</span><span>10.05.</span><span>11.05.</span><span>12.05.</span></div>
+            <div class="cal-row"><b>PKW</b><span class="bar busy-bar wide">vermietet</span></div>
+            <div class="cal-row"><b>Transporter</b><span class="bar free-bar">frei</span></div>
+            <div class="cal-row"><b>Anhänger</b><span class="bar request-bar offset">Anfrage</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="engine-section" id="engine">
+        <div class="engine-card public-side">
+          <p class="label">Website vorne</p>
+          <h2>Was der Kunde sieht</h2>
+          <ul>
+            <li>Fahrzeuge, Anhänger, Bikes oder Geräte als verkaufsstarke Angebotskarten</li>
+            <li>Zeitraum, Preisvorschau, Verfügbarkeit und Anfrageführung</li>
+            <li>Kunden sehen, ob ein Mietobjekt frei, angefragt oder belegt ist</li>
+            <li>Optional: echte Bilder, Videos, Standortauswahl, FAQ und Kundenportal</li>
+          </ul>
+        </div>
+        <div class="engine-card system-side">
+          <p class="label">Engine dahinter</p>
+          <h2>Was intern möglich ist</h2>
+          <ul>
+            <li>Alle Fahrzeuge/Mietobjekte werden intern mit Status und Kennzeichen geführt</li>
+            <li>Mietzeiträume können bestätigt, blockiert oder automatisch markiert werden</li>
+            <li>Statusmails, Erinnerungen, Kaution, Rechnungsdaten und Aufgaben sind verknüpfbar</li>
+            <li>Rollen, Adminbereich, Kundenportal und Automationsregeln sind individuell anpassbar</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>RentalOps · Demo für CoreEngineStudio</span>
+      <span>RENTALOPS-MOCKUP-009</span>
+    </footer>
+  </div>
+
+  <svg width="0" height="0" class="svg-symbols" aria-hidden="true" focusable="false">
+    <symbol id="icon-sportscar" viewBox="0 0 720 330">
+      <path d="M62 234 C141 206 585 206 661 234" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity=".13"/>
+      <path d="M78 210 C108 158 161 129 235 121 L382 104 C471 95 548 124 614 176 L676 193 L691 221 L667 237 H84 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linejoin="round"/>
+      <path d="M166 158 C210 124 256 116 333 111 L437 105 C493 103 541 126 587 167 H159" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+      <path d="M333 112 L323 169 M441 107 L445 168" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+      <path d="M122 204 C234 188 456 187 649 203" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" opacity=".42"/>
+      <path d="M115 194 H70 M632 190 H686" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" opacity=".58"/>
+      <circle cx="194" cy="237" r="47" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="194" cy="237" r="18" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+      <circle cx="566" cy="237" r="47" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="566" cy="237" r="18" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+    </symbol>
+
+    <symbol id="icon-car" viewBox="0 0 720 330">
+      <path d="M75 238 C156 210 550 210 635 238" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity=".13"/>
+      <path d="M98 215 L127 166 C149 130 195 111 258 111 H430 C492 111 544 142 588 182 L646 194 C668 199 682 213 684 232 L671 246 H91 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linejoin="round"/>
+      <path d="M155 162 C183 128 224 119 279 118 H421 C462 119 506 140 541 174 H143" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+      <path d="M286 119 L282 175 M425 120 L429 174" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+      <path d="M117 198 C219 206 423 207 631 195" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" opacity=".42"/>
+      <circle cx="190" cy="244" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="190" cy="244" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+      <circle cx="542" cy="244" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="542" cy="244" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+    </symbol>
+
+    <symbol id="icon-van" viewBox="0 0 720 330">
+      <path d="M88 246 C163 220 558 220 636 246" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity=".13"/>
+      <path d="M96 219 V139 C96 120 111 105 132 105 H424 C465 105 498 130 520 162 L613 166 C648 168 673 191 677 225 L665 249 H96 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linejoin="round"/>
+      <path d="M130 139 H297 V184 H130 Z M323 139 H448 L487 184 H323 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linejoin="round" opacity=".78"/>
+      <path d="M531 194 H643 M116 196 H500" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" opacity=".42"/>
+      <circle cx="203" cy="249" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="203" cy="249" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+      <circle cx="554" cy="249" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="554" cy="249" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+    </symbol>
+
+    <symbol id="icon-bike" viewBox="0 0 720 330">
+      <path d="M126 254 C210 228 515 228 600 254" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity=".13"/>
+      <circle cx="183" cy="238" r="56" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="546" cy="238" r="56" fill="none" stroke="currentColor" stroke-width="15"/>
+      <path d="M183 238 L284 153 L365 238 L257 238 L322 154 H433 L546 238 M365 238 L431 154" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M322 154 L305 109 M433 154 L471 116 M456 116 H503 M278 111 H336" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>
+      <path d="M356 135 C394 121 433 122 466 142" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" opacity=".42"/>
+    </symbol>
+
+    <symbol id="icon-trailer" viewBox="0 0 720 330">
+      <path d="M101 252 C169 225 547 225 614 252" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity=".13"/>
+      <path d="M98 104 H503 C528 104 548 124 548 150 V225 H98 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linejoin="round"/>
+      <path d="M548 204 H621 L671 234 M142 137 H500 M142 171 H500" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" opacity=".62"/>
+      <path d="M98 225 H610" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
+      <circle cx="231" cy="246" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="231" cy="246" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+      <circle cx="456" cy="246" r="43" fill="none" stroke="currentColor" stroke-width="15"/>
+      <circle cx="456" cy="246" r="17" fill="none" stroke="currentColor" stroke-width="10" opacity=".7"/>
+    </symbol>
+  </svg>
+
+  <script src="assets/js/rentalops.js"></script>
+</body>
+</html>
